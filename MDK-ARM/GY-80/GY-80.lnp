@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"gy-80\startup_stm32f103xb.o"
+"gy-80\main.o"
+"gy-80\stm32f1xx_it.o"
+"gy-80\stm32f1xx_hal_msp.o"
+"gy-80\gy80.o"
+"gy-80\stm32f1xx_hal_gpio_ex.o"
+"gy-80\stm32f1xx_hal_i2c.o"
+"gy-80\stm32f1xx_hal.o"
+"gy-80\stm32f1xx_hal_rcc.o"
+"gy-80\stm32f1xx_hal_rcc_ex.o"
+"gy-80\stm32f1xx_hal_gpio.o"
+"gy-80\stm32f1xx_hal_dma.o"
+"gy-80\stm32f1xx_hal_cortex.o"
+"gy-80\stm32f1xx_hal_pwr.o"
+"gy-80\stm32f1xx_hal_flash.o"
+"gy-80\stm32f1xx_hal_flash_ex.o"
+"gy-80\stm32f1xx_hal_exti.o"
+"gy-80\stm32f1xx_hal_tim.o"
+"gy-80\stm32f1xx_hal_tim_ex.o"
+"gy-80\stm32f1xx_hal_uart.o"
+"gy-80\system_stm32f1xx.o"
+--strict --scatter "GY-80\GY-80.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GY-80.map" -o GY-80\GY-80.axf
